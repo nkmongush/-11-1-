@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overwatch 2 - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/your-logo.png" alt="Your Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главное</a></li>
+                <li><a href="heroes.html">Герои</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="test.html">Тест</a></li>
+                <li><a href="glossary.html">Словарь</a></li>
+                <li><a href="description.html">Описание</a></li>
+                <li><a href="profile.html" id="current">профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <h1>Профиль</h1>
+        <div id="profile-slide">
+            <div id="name"></div>
+            <div id="date"></div>
+            <div id="gender"></div>
+            <button id="editProfile">Редактировать</button>
+        </div>
+        <div id="editForm" style="display: none;">
+            <h2>Редактировать профиль</h2>
+            <form id="editForm">
+                <label for="editName">Имя:</label>
+                <input type="text" id="editName" required><br>
+                <label for="editDate">Дата рождения:</label>
+                <input type="date" id="editDate" required><br>
+                <label>Пол:</label><br>
+                <input type="radio" id="editGenderMale" name="editGender" value="мужской" required>
+                <label for="editGenderMale">Мужской</label><br>
+                <input type="radio" id="editGenderFemale" name="editGender" value="женский" required>
+                <label for="editGenderFemale">Женский</label><br>
+                <button type="submit">Сохранить</button>
+                <div id="editResult"></div>
+            </form>
+        </div>
+        <div id="result"></div>
+    </main>
+    <footer>
+        <div>Контакты: <a href="tel:+7945582409">Телефон</a> | <a href="#">Соц. сети</a></div>
+        <div>&copy; 2024 [Начын.М]</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
